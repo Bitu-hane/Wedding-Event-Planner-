@@ -4,6 +4,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+const app = express();
+
 const PORT = process.env.PORT || 5002;
 const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
 
