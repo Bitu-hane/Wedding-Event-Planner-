@@ -1,0 +1,151 @@
+.engagement-page {
+  font-family: 'Georgia', serif;
+  background-color: #ffffff;
+  color: #444;
+}
+
+/* HERO */
+.engagement-hero {
+  position: relative;
+  height: 90vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  z-index: 2;
+}
+
+.main-title {
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.8);
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.sub-titles {
+  font-size: 2.2rem;
+  color: rgb(82, 134, 51);
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  letter-spacing: 1px;
+}
+
+/* BODY PART 1 */
+.engagement-content {
+  padding: 140px 20px;
+  background-color: #ffffff;
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.engagement-text {
+  font-size: 1.35rem;
+  line-height: 2;
+  margin-bottom: 32px;
+  color: #444;
+}
+
+.engagement-text strong {
+  color: #2d5f3f;
+  font-weight: 700;
+}
+
+/* BODY PART 2 – BIG ROMANTIC QUOTE */
+.quote-section {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  background: url('./assets/engage.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent; 
+}
+
+.quote-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  max-width: 1000px;
+}
+
+.quote-content h2 {
+  font-size: 5.5rem;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 0 6px 25px rgba(0,0,0,0.7);
+}
+
+.quote-content p {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #c8e6a0;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992 ) {
+  .main-title { font-size: 5rem; }
+  .sub-title { font-size: 1.9rem; }
+  .quote-content h2 { font-size: 4.2rem; }
+  .quote-content p { font-size: 2.2rem; }
+}
+
+@media (max-width: 768px) {
+  .main-title { font-size: 4rem; }
+  .sub-title { font-size: 1.7rem; }
+  .engagement-text { font-size: 1.2rem; }
+  .quote-content h2 { font-size: 3.5rem; }
+  .quote-content p { font-size: 1.9rem; }
+}
+
+@media (max-width: 480px) {
+  .main-title { font-size: 3.2rem; }
+  .sub-title { font-size: 1.4rem; }
+  .quote-content h2 { font-size: 2.8rem; }
+  .quote-content p { font-size: 1.6rem; }
+}

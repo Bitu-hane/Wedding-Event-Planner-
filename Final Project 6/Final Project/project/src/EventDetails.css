@@ -1,0 +1,197 @@
+/* General Page Styles */
+.event-details-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #111827;
+}
+
+.back-btn {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #e5e7eb;
+}
+
+/* Cards */
+.details-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+.details-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.info-grid p {
+  margin: 8px 0;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.status.pending {
+  background-color: #fbbf24; /* yellow */
+}
+
+.status.approved {
+  background-color: #10b981; /* green */
+}
+
+.status.in-progress {
+  background-color: #3b82f6; /* blue */
+}
+
+.status.declined {
+  background-color: #ef4444; /* red */
+}
+
+/* Vendor Table */
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.vendor-table th,
+.vendor-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.vendor-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Status Buttons */
+.status-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.status-btn:hover:not(.active) {
+  background-color: #e5e7eb;
+}
+
+.status-btn.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+/* Save Button */
+.save-btn {
+  margin-top: 15px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+  background-color: #059669;
+}
+
+.save-btn:disabled {
+  background-color: #6ee7b7;
+  cursor: not-allowed;
+}
+
+/* Loading & Error Text */
+.loading-text,
+.error-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 50px;
+}
+
+.status-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.status-btn:hover {
+  transform: scale(1.05);
+}
+
+.status-btn.active {
+  color: white;
+  border-color: transparent;
+}
+
+.status-btn.pending {
+  background: #f0ad4e;
+  color: white;         /* optional: text color */
+  padding: 0.5rem 1rem; /* optional: padding */
+  border-radius: 0.25rem; /* optional: rounded corners */
+  text-align: center;   /* optional */
+}
+
+.status-btn.approved {
+  background: #28a745;
+}
+
+.status-btn.in-progress {
+  background: #17a2b8;
+}
+
+.status-btn.declined {
+  background: #dc3545;
+}

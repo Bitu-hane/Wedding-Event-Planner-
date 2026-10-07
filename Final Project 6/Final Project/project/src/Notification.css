@@ -1,0 +1,37 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 250px;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.4s ease forwards;
+}
+
+.notification.success {
+  background: linear-gradient(135deg, #85f359 0%, #51bb43 100%);
+}
+
+.notification.error {
+  background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
+}
+
+.notification .close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}

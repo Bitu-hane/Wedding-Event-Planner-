@@ -1,0 +1,147 @@
+.about-section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d5f3f;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-intro {
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 48px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.about-box {
+  background-color: #fafaf8;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e6;
+}
+
+.about-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d5f3f;
+  margin-bottom: 12px;
+}
+
+.about-box p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faqs-section {
+  background-color: #fafaf8;
+  padding: 48px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e6;
+  text-align: left; /* Ensures left alignment for everything */
+  padding: 48px 64px; /* reduces left/right padding */
+
+}
+
+/* Title */
+.faqs-section h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d5f3f;
+  margin-bottom: 32px;
+}
+
+/* Each FAQ */
+.faq-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0de;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Question */
+.faq-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d5f3f;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+/* Answer */
+.faq-item p {
+  font-size: 14px;        /* Slightly larger text for readability */
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;              /* Remove unwanted spacing */
+  padding: 0;
+  text-align: left !important;
+  margin-top: 6px;        /* small clean spacing */
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-section h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .about-intro {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about-box {
+    padding: 24px;
+  }
+
+  .faqs-section {
+    padding: 32px 24px;
+  }
+
+  .faqs-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .faq-item h4 {
+    font-size: 15px;
+  }
+}

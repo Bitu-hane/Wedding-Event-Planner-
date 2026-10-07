@@ -1,0 +1,130 @@
+/* AboutContent.css */
+.about-page {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  height: 90vh;
+  min-height: 500px;
+  background: url('assets/bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(148, 179, 134, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* SECTIONS */
+.about-section {
+  padding: 100px 20px;
+  background-color:white;
+}
+
+.about-mission {
+  padding: 100px 20px;
+  background-color: #2d5f3f;
+  color: white;
+}
+.about-team{
+    padding: 100px 20px;
+    background-color: #f4f9f4;
+    color: #2d5f3f;
+}
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 3.2rem;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #2d5f3f;
+  position: relative;
+  display: inline-block;
+}
+
+.about-mission h2 {
+  color: #c8e6a0;
+}
+
+.about-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 5px;
+  background-color: #c8e6a0;
+  border-radius: 3px;
+}
+
+.about-block h3 {
+  font-size: 2.2rem;
+  color: #2d5f3f;
+  margin: 40px 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5a8f5a;
+  font-style: italic;
+  margin: 20px 0 30px;
+}
+
+.about-container p {
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.about-mission p {
+  color: #e8f5e8;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section, .about-mission {
+    padding: 80px 20px;
+  }
+  .about-container h2 {
+    font-size: 2.6rem;
+  }
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+}

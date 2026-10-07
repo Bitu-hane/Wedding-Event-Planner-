@@ -1,0 +1,187 @@
+/*.viewcart-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.viewcart-container h1 {
+  font-size: 2.5rem;
+  color: #51bb43;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cart-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.cart-item-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #72ac77;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cart-item-card:hover {
+  transform: translateY(-8px);
+}
+
+.cart-item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cart-item-info h3 {
+  font-size: 1.4rem;
+  color: #3b723e;
+}
+
+.cart-item-info p {
+  font-size: 1rem;
+  color: #666;
+  flex: 1;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #85f359 0%, #51bb43 100%);
+  border: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .cart-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* BookingDetail.css */
+
+
+.viewcart-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.viewcart-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cart-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cart-item-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.cart-item-card:hover {
+  transform: translateY(-5px);
+}
+
+.cart-item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  padding: 1rem;
+}
+
+.cart-item-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.cart-item-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 500%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #e60000;
+}
+
+/* Floating Book Now button */
+.book-all-btn {
+  position: fixed;
+  bottom: 300px;
+  right: 300px;
+  background: #2c831b;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+   transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.book-all-btn:hover {
+  background: #3f0303;
+  transform: translateY(-3px);
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 2rem;
+}
