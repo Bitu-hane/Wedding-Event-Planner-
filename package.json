@@ -1,5 +1,10 @@
 {
-  "dependencies": {
-    "mongoose": "^9.1.5"
+  "name": "wedding-event-planner",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
   }
 }
